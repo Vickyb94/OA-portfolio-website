@@ -4,7 +4,7 @@ margin: 0;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 box-sizing: border-box;
 }
-
+/*hero section*/
 .hero{
     height: 100vh;
     width: 100%;
@@ -12,7 +12,7 @@ box-sizing: border-box;
     background-size: cover;
     background-position: top;
 }
-
+/*nav bar*/
 nav{
     display: flex;
     align-items: center;
@@ -45,6 +45,7 @@ nav ul li a:hover{
     color:rgb(245, 136, 196);
     transition: .4s;
 }
+/*Resume button*/
 .btn{
 background-color: rgb(245, 136, 196);
 color: rgb(231, 228, 223);
@@ -74,6 +75,8 @@ p{
     color: rgb(231, 228, 223);
     margin: 5px 0px 5px;
     font-size: 25px;
+
+    /*intoductory form*/
 }
 .intro form{
      width: 380px;
@@ -106,7 +109,7 @@ p{
 .about{
     width: 100%;
     padding: 50px 0px;
-    background-color: rgb(66, 63, 63);
+    background-color: rgb(117, 43, 84);
 }
 
 .about-text{
@@ -134,14 +137,13 @@ p{
     margin-bottom: 45px;
 }
 
-/*Projects ssection*/
+/*Projects section*/
 .about{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px 50px;  
-    width: 90%;
-    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
+    align-items: right;
   }
   .flex-row {
     display: flex;
@@ -151,121 +153,137 @@ p{
 .section-title {
     font-size: 35px;
     font-family:cursive;
-    color: #024e76;
+    color: rgb(231, 228, 223);
     margin: 0 0 0 80px;
     width: 50%;
   }
-  
-.step-info{
-    flex :2 20%;
+  .project {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(117, 43, 84);
+    justify-content: space-around;
+    align-items: baseline;
+    width: 100%;
+    padding-top: 30px;
+
+}
+
+.title-project {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-  }
-  
-.vl-border1 {
-    border-right: 3px solid #39a6b2;
-    height: 150px;
-    flex: 2 1%;
-  }
-  
-.step-text {
-    flex: 25;
-  }
-  
-.step-text p {
-    color: var(--primary-color);
-    font-size: 15px;
-    text-align: left;
-    line-height: 1.3;
-    margin-left: 30px;
+    color: rgb(231, 228, 223);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    margin: 5px auto 20px auto;
+    text-align: center;
+    order: 0;
+}
+
+.top-project-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: center;
     width: 100%;
-  }
-  
-.vl-border2{
-    border-right: 3px solid #39a6b2;
-    height: 450px;
-    flex: 2 5%;  
-    
-  }
-
-.container{
-    flex:80;
-  }
-  
-.container {
-    display: flex;  
-    justify-content: space-between;
-    align-items: center; 
-    margin-left: 15px;
-    width: 80%;  
-      
-  }
-  
-.gallery{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 10vw);
-    grid-gap: 15px;
-    margin-left: 30px;     
-    
-  }
-  
-.gallery__item{
-  position: relative;
 }
-.gallery__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border: solid 1px var(--primary-color);  
- }
 
-figcaption{
-  position: absolute;
-  margin-left: 5px;
-  margin-top: -20%;
-  font-size: 12px;
-  font-style: italic;
-  font-weight: bold;
-  color:  rgb(22, 44, 44);
-  border: solid 1px var(--primary-color);
-  background-color: rgb(229, 232, 238);
+.top-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    width: 60%;
+    
 }
-  
-.gallery__item--1 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 4;
-  position: relative;
-  
-  }
-  
-.gallery__item--2 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    }
-  
-.gallery__item--3 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 4;
-  grid-row-end: 5;
-  }
-  
-.gallery__item--4 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  }
-  
-.gallery__item--5 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 4;
-  grid-row-end: 5;
-  }
+
+.project-1 {
+    width: 100%; 
+    margin-bottom: 0;
+}
+
+.top-card-text {
+    color: rgb(231, 228, 223);
+    background-color: rgb(117, 43, 84);
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    margin-top: 0;
+    font-size: 20px;
+}
+
+
+.top-card:hover {
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+
+
+.bottom-project-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 30px 10px 10px 10px;
+    justify-content: center;
+    width: 80%;
+    
+}
+
+.lower-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    width: 60%;
+    margin: 20px;
+    flex: 1;
+}
+
+.project-2 {
+    width: 100%;
+}
+
+.lower-card-text {
+    color: rgb(231, 228, 223);
+    background-color: rgb(117, 43, 84);
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    margin-top: 0;
+    font-size: 20px;
+}
+.project-3 {
+    width: 100%;
+}
+
+.lower-card:hover {
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+/*Contact*/
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb(117, 43, 84);
+    justify-content: space-around;
+    align-items: baseline;
+    width: 100%;
+    padding-top: 30px;
+}
+.contact img{
+    width: 50px;
+}
+.contact p{
+    display: inline;
+}
