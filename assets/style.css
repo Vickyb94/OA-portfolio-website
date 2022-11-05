@@ -61,7 +61,7 @@ transition: transform .4s;
 }
 .content{
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 8%;
     transform: translateY(-50%);
 }
@@ -173,7 +173,6 @@ p{
     text-align: center;
     order: 0;
 }
-
 .top-project-container {
     display: flex;
     flex-wrap: wrap;
@@ -181,7 +180,6 @@ p{
     justify-content: center;
     width: 100%;
 }
-
 .top-card {
     display: flex;
     flex-wrap: wrap;
@@ -191,15 +189,12 @@ p{
     border-style: solid;
     border-width: 3px;
     border-color: black;
-    width: 60%;
-    
+    width: 60%;   
 }
-
 .project-1 {
     width: 100%; 
     margin-bottom: 0;
 }
-
 .top-card-text {
     color: rgb(231, 228, 223);
     background-color: rgb(117, 43, 84);
@@ -209,25 +204,19 @@ p{
     margin-top: 0;
     font-size: 20px;
 }
-
-
 .top-card:hover {
     opacity: 0.5;
     transition: opacity 0.5s;
     cursor: pointer;
 }
-
-
 .bottom-project-container {
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
     padding: 30px 10px 10px 10px;
     justify-content: center;
-    width: 80%;
-    
+    width: 80%; 
 }
-
 .lower-card {
     display: flex;
     flex-wrap: wrap;
@@ -241,11 +230,9 @@ p{
     margin: 20px;
     flex: 1;
 }
-
 .project-2 {
     width: 100%;
 }
-
 .lower-card-text {
     color: rgb(231, 228, 223);
     background-color: rgb(117, 43, 84);
@@ -285,23 +272,75 @@ footer {
     background-color: rgb(117, 43, 84);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-/*media query for tablet when the screen is less than 750px wide*/
-@media screen and (max-width: 750px) {
-    .nav ul li:not(:first-child) {display: none;}
-    .nav ul li  {
-      float: right;
-      display: block;
+/*media query for tablet when the screen is less than 900px wide*/
+@media screen and (max-width: 900px) {
+
+    .top-card {
+        width: 70%;
     }
-    @media screen and (max-width: 600px) {
-        .nav.responsive {position: relative;}
-        .nav.responsive a.icon {
-          position: absolute;
-          right: 0;
-          top: 0;
-        }
-        .nav.responsive a {
-          float: none;
-          display: block;
-          text-align: left;
-        }
-      }
+    .lower-card {
+        width: 40%;
+    }
+    .intro form{
+        width: 250px;
+    }
+    nav ul li{
+        display:list-item;
+        padding: 5px 15px;
+    }
+    .logo{
+        font-size: 25px;
+    }
+    .intro form input:last-child{
+        padding: 2px 10px;
+        top: 6px;
+        right: 6px;
+    }
+    .intro form input:first-child{
+        padding: 2px 50px 5px 5px; 
+    }
+    .content h3{
+        font-size: 22px;
+    }
+    .nav ul li a{
+        padding-top: 15px;
+    }
+}
+/*media query for smaller devices when the screen is less than 550px wide*/
+@media screen and (max-width: 550px) {
+
+    .top-card {
+        width: 50%;
+    }
+    .lower-card {
+        width: 20%;
+    }
+    .intro form{
+        width: 150px;
+    }
+    nav ul li{
+        display:list-item;
+        padding: 2px 8px;
+    }
+    .logo{
+        font-size: 15px;
+    }
+    .intro form input:last-child{
+        padding: 0px 5px;
+        top: 6px;
+        right: 6px;
+    }
+    .intro form input:first-child{
+        padding: 0px 25px 0px 0px; 
+    }
+    .content h3{
+        font-size: 12px;
+    }
+    .nav ul li a{
+        padding-top: 8px;
+    }
+}
+
+
+
+
