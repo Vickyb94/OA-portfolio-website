@@ -111,10 +111,6 @@ p{
     padding: 50px 0px;
     background-color: rgb(117, 43, 84);
 }
-
-.about-text{
-    width: 200px;
-}
 .main{
     width: 1200px;
     max-width: 95%;
@@ -137,8 +133,6 @@ p{
     font-size: 20px;
     margin-bottom: 45px;
 }
-
-/*Projects section*/
 .about{
     display:flex;
     flex-wrap: wrap;
@@ -153,22 +147,20 @@ p{
   
 .section-title {
     font-size: 35px;
-    font-family:cursive;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(231, 228, 223);
     margin: 0 0 0 80px;
     width: 50%;
+    /*Projects section*/
   }
   .project {
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(117, 43, 84);
     justify-content: space-around;
-    align-items: baseline;
+    align-items: center;
     width: 100%;
-    padding-top: 30px;
-
 }
-
 .title-project {
     display: flex;
     flex-wrap: wrap;
@@ -293,4 +285,23 @@ footer {
     background-color: rgb(117, 43, 84);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-/*media query for tablet*/
+/*media query for tablet when the screen is less than 750px wide*/
+@media screen and (max-width: 750px) {
+    .nav ul li:not(:first-child) {display: none;}
+    .nav ul li  {
+      float: right;
+      display: block;
+    }
+    @media screen and (max-width: 600px) {
+        .nav.responsive {position: relative;}
+        .nav.responsive a.icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .nav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+      }
