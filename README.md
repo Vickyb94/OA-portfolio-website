@@ -9,7 +9,7 @@ N/A
 ## Usage
 The website can be used by following the URL link below. There is a navigation bar that goes to corresponding sections when clicked on. There is a reume button that contains a pdf file to view my past experiences. There is also a form "Lets talk" that prompts a chat. At the end of the webpage is my contact information - phone number, email and Github image that leads to my profile.
 
-Deployed Website URL:
+Deployed Website URL: https://vickyb94.github.io/OA-portfolio-website/
 
 ![alt](./assets/image/Website%20Screenshot.png)
 ## Credits
